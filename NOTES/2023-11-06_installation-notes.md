@@ -22,8 +22,10 @@ My notes on the different steps to get Maren's laptop ready to work
 
 
 ---
-## To do:
+## To do later:
 - [ ] examples how to make movies and animations.
+- [ ] Connexion to GRICAD
+- [ ] How to work on GRICAD
 
 ---
 ## Recap tutos

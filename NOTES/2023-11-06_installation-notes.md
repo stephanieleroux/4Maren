@@ -11,14 +11,13 @@ My notes on the different steps to get Maren's laptop ready to work
 
 ---
 ## 2023-11-07
-- [ ] brew install	netcdf ncview  ffmpeg
-- [ ] check git
-- [ ] conda
+- [x] brew install	netcdf ncview  ffmpeg
+- [x] check git
+- [x] conda
 	- [x] install
-	- [ ] Check if conda installed in DEV/
-	- [ ] Check conda command
-	- [ ] Create environment and install packages  following tuto: https://github.com/meom-group/tutos/blob/master/install-jupyter-notebooks-personnal-computer.md
-- [ ] example scripts  to plot arctic map
+	- [x] Check conda command
+	- [x] Create environment and install packages  following tuto: https://github.com/meom-group/tutos/blob/master/install-jupyter-notebooks-personnal-computer.md
+- [x] example scripts  to plot arctic map: in the NOTEBOOK directory: https://github.com/stephanieleroux/4Maren/blob/main/NOTEBOOKS/2023-11-07_intro-plot.ipynb
 
 
 ---

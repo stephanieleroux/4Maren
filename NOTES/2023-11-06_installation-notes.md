@@ -22,7 +22,7 @@ My notes on the different steps to get Maren's laptop ready to work
 
 ---
 ## To do later:
-- [ ] Intro session with Aurélie about Git, Github and good practices to back up your work
+- [x] Intro session with Aurélie about Git, Github and good practices to back up your work
 - [ ] Connexion to GRICAD
 - [ ] How to work on GRICAD
 

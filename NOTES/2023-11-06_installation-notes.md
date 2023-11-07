@@ -19,6 +19,10 @@ My notes on the different steps to get Maren's laptop ready to work
 	- [ ] Check conda command
 	- [ ] Create environment and install packages  following tuto: https://github.com/meom-group/tutos/blob/master/install-jupyter-notebooks-personnal-computer.md
 - [ ] example scripts  to plot arctic map
+
+
+---
+## To do:
 - [ ] examples how to make movies and animations.
 
 ---

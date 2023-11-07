@@ -2,10 +2,10 @@ My notes on the different steps to get Maren's laptop ready to work
 
 ---
 ## 2023-11-06
-1.  Install X Code command line tools and Homebrew:
+- [x] Install X Code command line tools and Homebrew:
 	* https://brew.sh/
 	* https://www.freecodecamp.org/news/install-xcode-command-line-tools/
-2. Install conda (had to change the location where it is installed to Maren’s directory, where she has writing permissions)
+- [x] Install conda (had to change the location where it is installed to Maren’s directory, where she has writing permissions)
 	* https://www.anaconda.com/download/
 	* https://docs.anaconda.com/free/anaconda/reference/troubleshooting/#this-package-is-incompatible-with-this-version-of-macos-error-when-running-a-pkg-installer-on-osx
 

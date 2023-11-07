@@ -23,7 +23,7 @@ My notes on the different steps to get Maren's laptop ready to work
 
 ---
 ## To do later:
-- [ ] examples how to make movies and animations.
+- [ ] Intro session with Aurélie about Git, Github and good practices to back up your work
 - [ ] Connexion to GRICAD
 - [ ] How to work on GRICAD
 

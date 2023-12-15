@@ -17,6 +17,10 @@
 #  Ed Blockley, July 2018                                   #
 #  Edited by Stephanie Leroux 2023
 #
+# NOTE: it works with the linux 'date' command, not the mac one.
+# on a mac you can install gdate (brew install coreutils) and 
+# then make an alias: alias date=gdate                      #
+#
 #############################################################
 
 usage () 

@@ -1,4 +1,4 @@
-This notebook gives a demo how to get SIDFEX position of today and use those positions to generate 10-day trajectories from SITRACK (based on sea ice velocities from NEMO SI3 in 1996-1997)
+This notebook gives a demo how to get SIDFEX position of today and use those positions to generate 10-day trajectories from SITRACK. At the moment, this example usesn sea ice velocities from NEMO SI3 in 1996-1997. The next step is to adapt SItrack for NEXTSIM-F velocities (see the todo list at the end of these notes).
 
 Last update: 2023-12-15.
 

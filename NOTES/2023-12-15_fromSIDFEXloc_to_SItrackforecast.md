@@ -27,5 +27,16 @@ vi sidfexloc_20231215.dat
 ## 2. Create netcdf file to initiate the forecast with initial buoys positions 
 (from previously created sidfexloc_YYYYMMDD.dat text file)
 
-* Based on Laurent B's tool SItrack and his script `SItrack/tools/generate_idealized_seeding.py`. See my modified script here: `generate_sidfex_seeding.py` [here]().
+* Based on Laurent B's tool SItrack and his script `SItrack/tools/generate_idealized_seeding.py`. See my modified script here: `generate_sidfex_seeding.py` [here](). Run it from  this little script:
+```
+#!/bin/bash
 
+# directory where are the demo data if needed.
+DATADIR="/Users/leroux/DATA/SASIP/DATA_SItrack/sitrack_demo"
+
+# Link the text file produced at step 1 with buoys ID and positions to the generic name sidfexloc.dat in same directory as the python script.
+ln -sf sidfexloc_YYYYMMDD.dat sidfexloc.dat 
+
+python generate_sidfex_seeding.py -d '1996-12-15_00:00:00' --lsidfex 1  -k 0 -S 5 
+```
+Note that it is the new `--lsidfex  1` option that switches on the sidfex seeding and will require a file name sidfexloc.dat to work. 

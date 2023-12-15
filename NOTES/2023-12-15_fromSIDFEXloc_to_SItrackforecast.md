@@ -4,7 +4,7 @@ This notebook gives a demo how to get SIDFEX position of today and use those pos
 
 ## 1. Get SIDFEX position of today
 
-* Based on the scripts available on SIDFEX website `get_buoy_data-auto_sharing.sh` edited to fit our own purposes (see [get_buoy_data-auto_SLX.sh](https://github.com/stephanieleroux/4Maren/blob/main/NOTEBOOKS/get_buoy_data-auto_SLX.sh) ).
+* Based on the scripts available on SIDFEX website (`get_buoy_data-auto_sharing.sh`) that i edited to fit our own purposes. See my script here: [get_buoy_data-auto_SLX.sh](https://github.com/stephanieleroux/4Maren/blob/main/NOTEBOOKS/get_buoy_data-auto_SLX.sh) ).
   
 * Run as a command with no argument to get buoys of the current day (today): `./get_buoy_data-auto_SLX.sh` . Or run as `./get_buoy_data-auto_SLX.sh YYYYMMDD` to get buoys for another day.
 
@@ -20,3 +20,9 @@ vi sidfexloc_20231215.dat
 300534062895730 -159.62445 86.37808
 300534062025510 -110.25001 86.58769
 ```
+
+* Important note: The script `get_buoy_data-auto_SLX.sh` does the download of SIDFEX active buoys ID  and then reads the position closest to midnight. This part could be modified according to our needs. __TODO__: check how they do.
+
+---
+## 2. Create netcdf file to initiate the forecast with initial buoys positions (from previously created sidfexloc_YYYYMMDD.dat text file)
+

@@ -24,5 +24,8 @@ vi sidfexloc_20231215.dat
 * Important note: The script `get_buoy_data-auto_SLX.sh` does the download of SIDFEX active buoys ID  and then reads the position closest to midnight. This part could be modified according to our needs. __TODO__: check how they do.
 
 ---
-## 2. Create netcdf file to initiate the forecast with initial buoys positions (from previously created sidfexloc_YYYYMMDD.dat text file)
+## 2. Create netcdf file to initiate the forecast with initial buoys positions 
+(from previously created sidfexloc_YYYYMMDD.dat text file)
+
+* Based on Laurent B's tool SItrack and his script `SItrack/tools/generate_idealized_seeding.py`. See my modified script here: `generate_sidfex_seeding.py` [here]().
 

@@ -43,7 +43,7 @@ ln -sf sidfexloc_YYYYMMDD.dat sidfexloc.dat
 
 python generate_sidfex_seeding.py -d '1996-12-15_00:00:00' --lsidfex 1  -k 0 -S 5 
 ```
-Note that it is the new `--lsidfex  1` option that switches on the sidfex seeding and will require a file name sidfexloc.dat to work. 
+Note that it is the new `--lsidfex  1` option that switches on the sidfex seeding and  requires the file named sidfexloc.dat to work from. 
 
 Also note that in this example, we give a wrong date to the command (`-d '1996-12-15_00:00:00'`) so that it is possible to advect the buoys from 1997 sea ice velocities in the next step (as an example). In the future we will need to put the current date since we will advect with sea ice forecast.
 

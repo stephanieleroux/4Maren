@@ -30,7 +30,40 @@ vi sidfexloc_20231215.dat
 ## STEP 2. Create netcdf file to initiate the forecast with initial buoys positions 
 (from previously created sidfexloc_YYYYMMDD.dat text file)
 
-* Based on Laurent B's tool SItrack and his script `SItrack/tools/generate_idealized_seeding.py` that i edited to fit our own purposes (see my modified script here: `generate_sidfex_seeding.py` [here](https://github.com/stephanieleroux/4Maren/blob/main/NOTEBOOKS/generate_sidfex_seeding.py)).
+* Based on Laurent B's tool SItrack and his script `SItrack/tools/generate_idealized_seeding.py` that i edited to fit our own purposes (see my modified script here: `generate_sidfex_seeding.py` [here](https://github.com/stephanieleroux/4Maren/blob/main/NOTEBOOKS/generate_sidfex_seeding.py)). I also had to add these two functions in `sitrack/traking.py`:
+```
+def SidfexSeeding( filepath='./sidfexloc.dat' ):
+    ''' Generate seeding lon lat from sidfex buoys read from text file.
+    Returns an array with lat lon and another with buoy IDs.
+    SLX
+    '''
+    print("============= SIDFEX SEEDING")
+    #debug example zLatLon = np.array([ [75.,190.] ])
+    sidfexdat = ReadFromSidfexDatFile( filepath )
+    zLatLon = sidfexdat[:,[2,1]] # reverse order of columns so that it is now lat lon.
+    zIDs = sidfexdat[:,0].astype(int)
+    return zLatLon,zIDs
+          
+         
+def ReadFromSidfexDatFile( filepath='./sidfexloc.dat' ):
+    '''
+         Reads from text file sidfex.dat and returns an array with id, lon, lat for all sidfex buoys at a given date.
+         SLX
+    '''
+    from os.path import exists
+    if (exists(filepath)):
+        # reads buoys id and locations (lon lat) from text file
+        listbuoys = np.genfromtxt(open(filepath))
+        # Keep track of how many buoys are read in input file
+        NBUOYTOTR=listbuoys.shape[0]
+        print("======== Nb of buoys read from sidfex file......"+str(NBUOYTOTR))
+    else:
+        print("============================================")
+        print("=== Error ! 'sidfexloc.dat' file is missing.")
+        print("============================================")
+        exit(0)
+    return listbuoys
+```
 * Run it from  this little script:
 ```
 #!/bin/bash

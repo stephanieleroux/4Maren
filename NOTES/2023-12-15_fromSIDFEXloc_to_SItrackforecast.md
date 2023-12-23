@@ -25,7 +25,7 @@ vi sidfexloc_20231215.dat
 
 * Important note: The script `get_buoy_data-auto_SLX.sh` does the download of SIDFEX active buoys ID  and then reads the position closest to midnight. This part could be modified according to our needs. __TODO__: check how they do.
 
-* To make it work on a Mac, you need to use gdate instead of date. Install gdate from homebrew (once for all) like this : `>brew install coreutils`. Then make yourself an alias in your .bashrc file : `alias date=gdate`
+* To make it work on a Mac, you need to use gdate instead of date. Install gdate from homebrew (once for all) like this : `>brew install coreutils`. Then replace all the occurrences of the command `date` in the script by `gdate`.
 
 ## STEP 2. Create netcdf file to initiate the forecast with initial buoys positions 
 (from previously created sidfexloc_YYYYMMDD.dat text file)
